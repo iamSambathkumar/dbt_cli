@@ -1,0 +1,26 @@
+version: 2
+
+sources:
+  - name: snowflake_sample_data # required
+    description: sample data provided by Snowflake
+    database: snowflake_sample_data
+    schema: tpch_sf1
+    tables:
+      - name: customer
+        description: |
+          The customer table contains information about customers in the TPC-H benchmark.
+          It includes details such as customer ID, name, address, and account balance.
+        # columns:
+        #   - name: c_custkey
+        #     description: Unique identifier for the customer.
+        #     tests:
+        #       - not_null
+        #       - unique
+        #   - name: c_name
+        #     description: Name of the customer.
+        #   - name: c_address
+        #     description: Address of the customer.
+        #   - name: c_phone
+        #     description: Phone number of the customer.
+        #   - name: c_acctbal
+        #     description: Account balance of the customer.
